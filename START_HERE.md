@@ -77,17 +77,38 @@ Frontend will run at: **http://localhost:3000**
 ## 🔧 Configuration
 
 ### Backend Environment (.env in backend/)
+**Required:** Create `.env` file in `backend/` directory:
+
 ```env
+OLLAMA_API_KEY=your-ollama-api-key-here
 DATABASE_URL=sqlite:///./pricing_intelligence.db
-OLLAMA_API_KEY=5623b944c56c4b5b8a62443f89629a36.BMkQKImaQ23p-UajOs3UkD7l
 OLLAMA_API_URL=https://api.ollama.ai/v1/chat/completions
 OLLAMA_MODEL=llama3.2
 FRONTEND_URL=http://localhost:3000
 ```
 
+Copy the example file:
+```bash
+cd backend
+cp .env.example .env
+# Edit .env and add your OLLAMA_API_KEY
+```
+
 ### Frontend Environment (.env.local in web-app/)
+**Required:** Create `.env.local` file in `web-app/` directory:
+
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8000
+OLLAMA_API_KEY=your-ollama-api-key-here
+OLLAMA_API_URL=https://api.ollama.ai/v1/chat/completions
+OLLAMA_MODEL=llama3.2
+```
+
+Copy the example file:
+```bash
+cd web-app
+cp .env.example .env.local
+# Edit .env.local and add your OLLAMA_API_KEY
 ```
 
 ## 📁 Project Structure

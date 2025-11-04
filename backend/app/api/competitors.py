@@ -72,3 +72,4 @@ async def get_competitor(competitor_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Competitor not found")
     return competitor
 
+

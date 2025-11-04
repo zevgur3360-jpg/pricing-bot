@@ -33,3 +33,4 @@ class PriceHistory(Base):
     # product = relationship("Product", back_populates="price_history")
     # competitor = relationship("Competitor", back_populates="price_history")
 
+

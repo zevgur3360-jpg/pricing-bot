@@ -14,10 +14,12 @@ class OllamaService:
     """Service for interacting with Ollama API"""
     
     def __init__(self):
-        self.api_key = os.getenv(
-            "OLLAMA_API_KEY",
-            "5623b944c56c4b5b8a62443f89629a36.BMkQKImaQ23p-UajOs3UkD7l"
-        )
+        self.api_key = os.getenv("OLLAMA_API_KEY")
+        if not self.api_key:
+            raise ValueError(
+                "OLLAMA_API_KEY environment variable is required. "
+                "Please set it in your .env file or environment."
+            )
         self.api_url = os.getenv(
             "OLLAMA_API_URL",
             "https://api.ollama.ai/v1/chat/completions"

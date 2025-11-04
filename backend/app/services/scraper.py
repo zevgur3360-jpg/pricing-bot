@@ -139,3 +139,4 @@ class PriceScraper:
                 'url': url
             }
 
+

@@ -99,3 +99,4 @@ async def scrape_and_save(
         "competitor_id": competitor_id
     }
 
+

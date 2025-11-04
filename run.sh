@@ -23,3 +23,4 @@ fi
 python3 shopping_assistant.py
 
 
+

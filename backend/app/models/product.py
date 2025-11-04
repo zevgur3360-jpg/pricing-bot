@@ -25,3 +25,4 @@ class Product(Base):
     # price_history = relationship("PriceHistory", back_populates="product")
     # reviews = relationship("Review", back_populates="product")
 
+

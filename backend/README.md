@@ -63,14 +63,22 @@ API will be available at: http://localhost:8000
 
 ## Environment Variables
 
-Create `.env` file (optional):
+**Required:** Create `.env` file in the `backend/` directory:
 
 ```env
+OLLAMA_API_KEY=your-ollama-api-key-here
 DATABASE_URL=sqlite:///./pricing_intelligence.db
-OLLAMA_API_KEY=your-key-here
 OLLAMA_API_URL=https://api.ollama.ai/v1/chat/completions
 OLLAMA_MODEL=llama3.2
 FRONTEND_URL=http://localhost:3000
+```
+
+**Important:** The `OLLAMA_API_KEY` is required. Copy `.env.example` to `.env` and add your API key.
+
+You can copy the example file:
+```bash
+cp .env.example .env
+# Then edit .env and add your OLLAMA_API_KEY
 ```
 
 ## Features

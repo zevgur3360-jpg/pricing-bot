@@ -167,3 +167,4 @@ async def get_competitor_analysis(competitor_id: int, db: Session = Depends(get_
         "pricing_strategy": "competitive" if promotions > len(product_prices) * 0.3 else "standard"
     }
 
+

@@ -25,7 +25,7 @@ A free shopping assistant that helps you find the average price and buying optio
    The API key is already configured in the code. If you prefer to use an environment variable instead:
    
    ```bash
-   export OPENAI_API_KEY='your-api-key-here'
+   export OLLAMA_API_KEY='your-api-key-here'
    ```
 
 ## Usage

@@ -111,16 +111,16 @@ Note: If this is a product that requires local service (like a haircut, home rep
 def main():
     """Main entry point"""
     # Use the API key from environment variable
-    api_key = os.getenv('OPENAI_API_KEY')
+    api_key = os.getenv('OLLAMA_API_KEY')
     
     if not api_key:
-        print("Error: OPENAI_API_KEY environment variable not found!")
-        print("Please set the OPENAI_API_KEY environment variable.")
+        print("Error: OLLAMA_API_KEY environment variable not found!")
+        print("Please set the OLLAMA_API_KEY environment variable.")
         sys.exit(1)
     
     if not api_key:
         print("Error: OpenAI API key not found!")
-        print("Please set the OPENAI_API_KEY environment variable or modify the code.")
+        print("Please set the OLLAMA_API_KEY environment variable or modify the code.")
         sys.exit(1)
     
     # Create and run the shopping assistant

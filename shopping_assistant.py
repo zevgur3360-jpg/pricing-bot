@@ -110,8 +110,13 @@ Note: If this is a product that requires local service (like a haircut, home rep
 
 def main():
     """Main entry point"""
-    # Use the API key from environment variable if set, otherwise use the provided one
-    api_key = os.getenv('OPENAI_API_KEY', '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')
+    # Use the API key from environment variable
+    api_key = os.getenv('OPENAI_API_KEY')
+    
+    if not api_key:
+        print("Error: OPENAI_API_KEY environment variable not found!")
+        print("Please set the OPENAI_API_KEY environment variable.")
+        sys.exit(1)
     
     if not api_key:
         print("Error: OpenAI API key not found!")

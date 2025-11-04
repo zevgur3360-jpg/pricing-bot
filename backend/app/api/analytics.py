@@ -168,3 +168,4 @@ async def get_competitor_analysis(competitor_id: int, db: Session = Depends(get_
     }
 
 
+

@@ -118,11 +118,6 @@ def main():
         print("Please set the OLLAMA_API_KEY environment variable.")
         sys.exit(1)
     
-    if not api_key:
-        print("Error: OpenAI API key not found!")
-        print("Please set the OLLAMA_API_KEY environment variable or modify the code.")
-        sys.exit(1)
-    
     # Create and run the shopping assistant
     assistant = ShoppingAssistant(api_key)
     assistant.interactive_mode()

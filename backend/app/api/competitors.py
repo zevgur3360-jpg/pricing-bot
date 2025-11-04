@@ -73,3 +73,4 @@ async def get_competitor(competitor_id: int, db: Session = Depends(get_db)):
     return competitor
 
 
+
